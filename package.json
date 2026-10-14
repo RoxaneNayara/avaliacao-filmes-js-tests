@@ -1,19 +1,23 @@
+
 {
-  "name": "avaliacaofilme",
+  "name": "avaliacao-filmes-js-tests",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "Exercício de JavaScript com testes automatizados e técnicas de teste de caixa-preta.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "mocha",
+    "software-testing",
+    "black-box-testing"
+  ],
+  "author": "Roxane Nayara",
   "license": "ISC",
   "type": "module",
-  "dependencies": {
+  "devDependencies": {
     "mocha": "^12.0.3"
   }
 }
+
