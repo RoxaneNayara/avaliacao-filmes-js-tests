@@ -3,25 +3,26 @@ import { avaliarFilmes } from '../source/avaliacaoFilmes.js'
 
 describe('Avaliação de Filmes - Partição de Equivalência', () => {
     it('CT01 - Deve classificar o filme como recomendado', () => {
-
         const filmes = [
             {
                 nome: 'Minha mãe é uma peça',
                 avaliacoes: [5, 4, 4, 4, 5]
             }
-
         ];
 
         const resultadoEsperado = [
             {
                 nome: 'Minha mãe é uma peça',
-                quantidadePessoas: '5',
-                media: '4.4',
+                quantidadePessoas: 5,
+                media: 4.4,
                 classificacao: 'Filme recomendado'
-
             }
         ];
-    })
+
+        const resultadoObtido = avaliarFilmes(filmes);
+
+        assert.deepStrictEqual(resultadoObtido, resultadoEsperado);
+    });
 
     it('CT02 - Deve classificar o filme como razoável', () => {
         const filmes = [

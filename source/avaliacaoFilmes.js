@@ -20,10 +20,6 @@ export const calcularMedia = (avaliacoes) => {
             throw new Error('Nota inválida');
         }
 
-        if (nota < 0) {
-            throw new Error('Nota inválida');
-        }
-
         somaAvaliacoes += nota;
     });
 
